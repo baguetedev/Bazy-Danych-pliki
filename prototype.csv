@@ -1,0 +1,2 @@
+ticket_id,title,description,status,priority,created_at,resolved_at,category_name,requester_email,technician_email,device_serial,comment_content
+101,"Awaria dysku w laptopie","System nie uruchamia się, słychać nietypowe dźwięki z obudowy.","IN_PROGRESS","HIGH","2026-05-14 08:30:00",,"Hardware","jan.kowalski@firma.pl","adam.nowak@firma.pl","PF12345X","Przyjąłem zgłoszenie, zamawiam nowy dysk SSD."

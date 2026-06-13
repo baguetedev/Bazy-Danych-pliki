@@ -1,0 +1,13 @@
+import simplejson
+
+creds_northwind = {
+    "user_name": "student15",
+    "password": "fwbmfhgxqdZNP",
+    "host_name": "127.0.0.1",
+    "port_number": "5432",
+    "db_name": "northwind"
+}
+
+with open("database_creds.json", "w") as db_con_file:
+    simplejson.dump(creds_northwind, db_con_file)
+

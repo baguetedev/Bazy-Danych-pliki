@@ -1,0 +1,27 @@
+-- Fragment kodu definicji kluczowych tabel (PostgreSQL)
+CREATE TABLE Ksiazki (
+    ID_Ksiazki SERIAL PRIMARY KEY,
+    ID_Autora INTEGER REFERENCES Autorzy(ID_Autora),
+    ID_Kategorii INTEGER REFERENCES Kategorie(ID_Kategorii),
+    Tytul VARCHAR(150) NOT NULL,
+    Rok_Wydania SMALLINT
+);
+
+CREATE TABLE Wypozyczenia (
+    ID_Wypozyczenia SERIAL PRIMARY KEY,
+    ID_Czytelnika INTEGER REFERENCES Czytelnicy(ID_Czytelnika),
+    ID_Ksiazki INTEGER REFERENCES Ksiazki(ID_Ksiazki),
+    Data_Wypozyczenia DATE DEFAULT CURRENT_DATE,
+    Data_Zwrotu DATE
+);
+
+-- Fragment kodu definicji kluczowych tabel (SQLite)
+CREATE TABLE Wypozyczenia (
+    ID_Wypozyczenia INTEGER PRIMARY KEY AUTOINCREMENT,
+    ID_Czytelnika INTEGER,
+    ID_Ksiazki INTEGER,
+    Data_Wypozyczenia TEXT,
+    Data_Zwrotu TEXT,
+    FOREIGN KEY(ID_Czytelnika) REFERENCES Czytelnicy(ID_Czytelnika),
+    FOREIGN KEY(ID_Ksiazki) REFERENCES Ksiazki(ID_Ksiazki)
+);

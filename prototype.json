@@ -1,0 +1,36 @@
+{
+  "ticket_id": 101,
+  "title": "Awaria dysku w laptopie",
+  "description": "System nie uruchamia się, słychać nietypowe dźwięki z obudowy.",
+  "status": "IN_PROGRESS",
+  "priority": "HIGH",
+  "created_at": "2026-05-14T08:30:00Z",
+  "resolved_at": null,
+  "category": {
+    "category_id": 3,
+    "name": "Hardware"
+  },
+  "requester": {
+    "user_id": 12,
+    "first_name": "Jan",
+    "last_name": "Kowalski",
+    "email": "jan.kowalski@firma.pl"
+  },
+  "assigned_technician": {
+    "user_id": 5,
+    "first_name": "Adam",
+    "last_name": "Nowak",
+    "email": "adam.nowak@firma.pl"
+  },
+  "device": {
+    "device_id": 404,
+    "serial_number": "PF12345X",
+    "device_name": "ThinkPad T14"
+  },
+  "sample_comment": {
+    "comment_id": 1001,
+    "author_id": 5,
+    "content": "Przyjąłem zgłoszenie, zamawiam nowy dysk SSD.",
+    "created_at": "2026-05-14T09:15:00Z"
+  }
+}
