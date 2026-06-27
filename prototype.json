@@ -1,0 +1,25 @@
+{
+  "czytelnik": {
+    "imie": "Jan",
+    "nazwisko": "Kowalski",
+    "adres": {
+      "ulica": "Kwiatowa 1",
+      "kod_pocztowy": "00-001",
+      "miasto": "Warszawa"
+    },
+    "data_zapisu": "2024-01-15"
+  },
+  "wypozyczenie": {
+    "ksiazka": {
+      "tytul": "Wiedźmin",
+      "rok_wydania": 1993,
+      "autor": {
+        "imie": "Andrzej",
+        "nazwisko": "Sapkowski"
+      },
+      "kategoria": "Fantastyka"
+    },
+    "data_wypozyczenia": "2024-03-01",
+    "data_zwrotu": "2024-03-15"
+  }
+}
